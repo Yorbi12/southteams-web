@@ -195,3 +195,10 @@ footer a:hover {
   color: #ffffff;
   margin-bottom: 0px;
 }
+
+
+
+#howitworks .join-us-form {
+  background-image: url("images/join-us_background.jpg");
+  height: 100px;
+}
