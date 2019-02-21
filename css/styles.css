@@ -219,19 +219,22 @@ footer a:hover {
   padding: 10px;
   margin-bottom: 20px;
   position: relative;
+  border-radius: .25em;
 }
 
 #howitworks .join-us-form .input-group input {
   width: 80%;
   margin: 5px;
   padding: 5px;
-  padding-left: 10px
+  padding-left: 10px;
+  border-radius: .25em;
 }
 
 #howitworks .join-us-form .input-group input::placeholder {
   padding: 5px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  border-radius: .25em;
 
 }
 
@@ -264,7 +267,7 @@ footer a:hover {
 
 label {
   display: inline-block;
-  width: 80%;
+  width: 77%;
 
 }
 
@@ -284,6 +287,9 @@ input,
   margin: 0;
   left: 0;
   position: relative;
+  border-radius: .25em;
+  width: 77%;
+
 }
 
 [type=file]+label {
@@ -313,6 +319,7 @@ input,
   width: 80%;
   padding: 10px;
   padding-left: 15px;
+  border-radius: .25em;
 
 }
 
@@ -334,4 +341,8 @@ input,
   width: 100px;
   color: white;
 
+}
+
+.contact-section {
+  height: 100vh;
 }
