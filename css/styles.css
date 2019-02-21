@@ -221,7 +221,15 @@ footer a:hover {
 .bigcard:hover .card-hover {
   opacity: 1;
   color: #ffffff;
-  transition: opacity 0.4s;
+  transition: opacity 0.4s; 
+}
+
+#howitworks .container-fluid {
+  background-image: url("../images/join-us_background.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .bigcard .card-info {
@@ -241,6 +249,145 @@ footer a:hover {
 }
 
 #howitworks .join-us-form {
+  /*background-image: url("../images/join-us_background.jpg");*/
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#howitworks .join-us-form .input-group {
+  background-color: #EA202D;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: .25em;
+}
+
+#howitworks .join-us-form .input-group input {
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: .25em;
+}
+
+#howitworks .join-us-form .input-group input::placeholder {
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  border-radius: .25em;
+
+}
+
+
+#howitworks .join-us-form .girl {
+  position: absolute;
+  right: -145px;
+  top: -150px;
+}
+
+@media only screen and (max-width: 768px) {
+  #howitworks .join-us-form .girl {
+    width: 178px;
+    right: -112px;
+    top: -122px;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  #howitworks .join-us-form .girl {
+    width: 133px;
+    right: -71px;
+    top: -89px;
+  }
+
+
+}
+
+label {
+  display: inline-block;
+  width: 77%;
+
+}
+
+/* Hide the file input using
+opacity */
+[type=file] {
+  position: absolute;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+input,
+[type=file]+label {
+  border: 1px solid #CCC;
+  padding: 10px;
+  width: 80%;
+  margin: 0;
+  left: 0;
+  position: relative;
+  border-radius: .25em;
+  width: 77%;
+
+}
+
+[type=file]+label {
+  text-align: center;
+
+  /* Decorative */
+  background: white;
+  color: #EA202D;
+  border: none;
+  cursor: pointer;
+}
+
+[type=file]+label:hover {
+  background: #EA202D;
+  color: white;
+  border: 1px solid white;
+}
+
+
+#howitworks .join-us-form .hide-padding {
+  padding: 0;
+  height: 75px;
+}
+
+#howitworks .join-us-form .input-group textarea {
+  resize: none;
+  width: 80%;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: .25em;
+
+}
+
+#howitworks .join-us-form .input-group::placeholder {
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+
+}
+
+#howitworks .join-us-form form p {
+  font-size: 45px;
+  font-weight: bold;
+  color: #36474F;
+}
+
+#howitworks .join-us-form #send-button {
+  background: #122026;
+  width: 100px;
+  color: white;
+
+}
+
+.contact-section {
+  height: 100vh;
   background-image: url("images/join-us_background.jpg");
   height: 100px;
 }
