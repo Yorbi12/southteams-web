@@ -48,8 +48,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline" href="#">Build my team</a>
+          <li class="nav-item ml-2">
+            <a class="nav-link btn btn-outline" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Build
+              my team</a>
           </li>
         </ul>
       </div>
@@ -109,57 +110,64 @@
       </div>
     </div>
   </section>
-   <!-- /.How it works -->
-   <section id="ourlabs" class="py-5">
-   <div class="container">
-   <div class="row">
-    <div class="col-md-8 mb-5">
-      <h1>Our LABS</h1>
-      <hr class="mb-2 mt-0 d-inline-block separador">
-      <p>We provide short term support. By specializing on the understanding of business problems. We are fully committed in our clients needs and problem solving.  We provide the right development in order to empower your project, so you are capable of maintaining it and improve it once we’ve solved your problem.</p>
-    </div>
-  </div>
-  
+  <!-- /.How it works -->
+  <section id="ourlabs" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mb-5">
+          <h1>Our LABS</h1>
+          <hr class="mb-2 mt-0 d-inline-block separador">
+          <p>We provide short term support. By specializing on the understanding of business problems. We are fully
+            committed in our clients needs and problem solving. We provide the right development in order to empower
+            your project, so you are capable of maintaining it and improve it once we’ve solved your problem.</p>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="col-md-4 mb-5">
-        <div class="card d-flex align-items-center">
-          <div class="card-hover">
-            <p class="card-info p-4">We build your team using the magic of blockchain technologies. From strategy to implementation, our blockchain lab works with enterprises embracing the latest blockchain and distributed ledger technologies in their solutions.</p>
-          </div>
-        <div class="card-content">
-          <img class="card-img-top" src="images/our-labs-1-blockchainlab.jpg" alt="">
-          <h4 class="card-title">BLOCKCHAIN LAB</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-5">
-      <div class="card d-flex align-items-center">
-          <div class="card-hover">
-            <p class="card-info p-4">We focus on Security Analysis/ Verification of Blockchains State-of-the-art Attacks on Blockchains and Wallets.</p>
-          </div>
-        <div class="card-content">
-          <img class="card-img-top" src="images/our-labs-2-security-lab.jpg" alt="">
-          <h4 class="card-title">SECURITY LAB</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-5">
-      <div class="card d-flex align-items-center">
-          <div class="card-hover">
-            <p class="card-info p-4">Automation and operations management are essential aspects of highly productive engineering teams. Our Develops lab brings together top experts, tools, and processes to streamline the lifecycle of any software project.</p>
-          </div>
-        <div class="card-content">
-          <img class="card-img-top" src="images/our-labs-3-develops-lab.jpg" alt="">
-          <h4 class="card-title">DEVELOPS LAB</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="ourclients" class="py-5">
-  <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5">
+          <div class="card d-flex align-items-center">
+            <div class="card-hover">
+              <p class="card-info p-4">We build your team using the magic of blockchain technologies. From strategy to
+                implementation, our blockchain lab works with enterprises embracing the latest blockchain and
+                distributed ledger technologies in their solutions.</p>
+            </div>
+            <div class="card-content">
+              <img class="card-img-top" src="images/our-labs-1-blockchainlab.jpg" alt="">
+              <h4 class="card-title">BLOCKCHAIN LAB</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card d-flex align-items-center">
+            <div class="card-hover">
+              <p class="card-info p-4">We focus on Security Analysis/ Verification of Blockchains State-of-the-art
+                Attacks on Blockchains and Wallets.</p>
+            </div>
+            <div class="card-content">
+              <img class="card-img-top" src="images/our-labs-2-security-lab.jpg" alt="">
+              <h4 class="card-title">SECURITY LAB</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card d-flex align-items-center">
+            <div class="card-hover">
+              <p class="card-info p-4">Automation and operations management are essential aspects of highly productive
+                engineering teams. Our Develops lab brings together top experts, tools, and processes to streamline the
+                lifecycle of any software project.</p>
+            </div>
+            <div class="card-content">
+              <img class="card-img-top" src="images/our-labs-3-develops-lab.jpg" alt="">
+              <h4 class="card-title">DEVELOPS LAB</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="ourclients" class="py-5">
+    <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <img class="img-fluid float-left mr-2" style="max-width: 40px" src="images/other-clients.png" alt="">
@@ -402,6 +410,95 @@
 
 
   <!-- Footer -->
+
+
+
+  <!-- Modal -->
+
+
+
+
+
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="builder" class="container">
+          <div class="row">
+
+            <div class="col-md-6 d-flex flex-column justify-content-center create-team">
+              <p>I want to</p>
+              <h3> <span> create </span>
+                my team</h3>
+              <button id="create-1" type="button" class="btn btn-primary">START</button>
+            </div>
+
+            <div class="col-md-6 d-flex  flex-column justify-content-center design-team">
+              <p>I want you to </p>
+              <h3> <span> design</span>
+                my team</h3>
+              <button type="button" class="btn btn-primary">START</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container create-2 d-flex flex-column justify-content-center align">
+          <div class="row">
+
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+              <p>Create your own team by dragging and dropping an intem from the left into the space on the right.
+                When you are done click “next” at the bottom right.</p>
+              <button type="button" class="btn btn-primary">OK!</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <script src="vendor/jquery/jquery.min.js"></script>
