@@ -244,3 +244,94 @@ footer a:hover {
   background-image: url("images/join-us_background.jpg");
   height: 100px;
 }
+
+
+/*******  OUR TEAMS CARDS ******/
+.team-cards {
+  box-shadow: 4px 4px 12px 0px #80808040;
+  ;
+  min-height: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 0;
+}
+
+.c-1 {
+  background-color: white;
+}
+
+.c-2 {
+  background-color: #fc6054;
+}
+
+.c-3 {
+  background-color: #ea202d;
+}
+
+.c-4 {
+  background-color: #122026;
+}
+
+.team-cards .counter,
+.team-cards .description {
+  padding-left: 25px;
+}
+
+.team-cards .counter {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51.82px;
+  position: relative;
+  top: 4.61px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+.team-cards .description {
+  max-width: 180px;
+  text-align: left;
+}
+
+
+.team-cards .description p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  position: relative;
+  top: 2.78px;
+  color: #fff;
+}
+
+.c-1 .counter,
+.c-1 .description p {
+  color: #122026;
+}
+
+.c-3 .counter::after {
+  content: '+';
+  color: white;
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width:768px) {
+  .team-cards {
+    margin-bottom: 14px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .team-cards {
+    min-height: 253px
+  }
+
+  .team-cards .counter,
+  .team-cards .description {
+    padding-left: 7px;
+  }
+}
