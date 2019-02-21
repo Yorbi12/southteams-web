@@ -199,6 +199,100 @@ footer a:hover {
 
 
 #howitworks .join-us-form {
-  background-image: url("images/join-us_background.jpg");
-  height: 100px;
+  /*background-image: url("../images/join-us_background.jpg");*/
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#howitworks .join-us-form .input-group {
+  background-color: #EA202D;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#howitworks .join-us-form .input-group input {
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 10px
+}
+
+#howitworks .join-us-form .input-group input::placeholder {
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+
+}
+
+
+
+
+
+
+label {
+  display: inline-block;
+  width: 80%;
+
+}
+
+/* Hide the file input using
+opacity */
+[type=file] {
+  position: absolute;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+input,
+[type=file]+label {
+  border: 1px solid #CCC;
+  padding: 10px;
+  width: 80%;
+  margin: 0;
+  left: 0;
+  position: relative;
+}
+
+[type=file]+label {
+  text-align: center;
+
+  /* Decorative */
+  background: white;
+  color: #EA202D;
+  border: none;
+  cursor: pointer;
+}
+
+[type=file]+label:hover {
+  background: #EA202D;
+  color: white;
+  border: 1px solid white;
+}
+
+
+#howitworks .join-us-form .hide-padding {
+  padding: 0;
+  height: 75px;
+}
+
+#howitworks .join-us-form .input-group textarea {
+  resize: none;
+  width: 80%;
+
+}
+
+#howitworks .join-us-form form p {
+  font-size: 45px;
+  font-weight: bold;
+  color: #36474F;
+}
+
+#howitworks .join-us-form #send-button {
+  background: #122026;
+  width: 100px;
+  color: white;
+
 }
