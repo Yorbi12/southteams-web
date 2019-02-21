@@ -215,8 +215,14 @@ footer a:hover {
 }
 
 .bigcard {
-  min-height: 600px;
+  min-height: 500px;
 }
+@media only screen and (max-width: 500px) {
+  .bigcard {
+    min-height: 600px;
+  }
+}
+
 
 .bigcard:hover .card-hover {
   opacity: 1;
@@ -480,4 +486,18 @@ input,
   .team-cards .description {
     padding-left: 7px;
   }
+}
+
+.img-ourtalent {
+  max-width: 400px;
+}
+
+.img-tech {
+  max-width: 800px;
+}
+
+section:before {
+  height: 54px;
+  content: "";
+  display:block;
 }

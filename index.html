@@ -21,7 +21,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="images/logo-navbar.png" alt="">
@@ -37,17 +37,17 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">How it works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Talent</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="joinus.html">Join Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+              <a class="nav-link" href="index.html#howitworks">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-talent.html">Our Talent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="joinus.html">Join Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link btn btn-outline" href="#">Build my team</a>
           </li>
@@ -305,7 +305,6 @@
           <p>
             <a href="#!">Contact</a>
           </p>
-          <hr class="mb-3 mt-0 d-inline-block separador-sm">
           <p>
             <a href="#!">Build My Team</a>
           </p>
@@ -409,6 +408,12 @@
 
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+
+  <script type="text/javascript">
+    $('html,body').animate({
+      scrollTop: $(window.location.hash).offset().top
+    });
+</script>
 
 </body>
 

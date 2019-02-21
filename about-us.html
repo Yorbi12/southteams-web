@@ -40,18 +40,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">How it works</a>
+            <a class="nav-link" href="index.html#howitworks">How it works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Talent</a>
+            <a class="nav-link" href="our-talent.html">Our Talent</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Join Us</a>
+            <a class="nav-link" href="joinus.html">Join Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="index.html#contact">Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ml-2">
             <a class="nav-link btn btn-outline" href="#">Build my team</a>
           </li>
         </ul>
@@ -367,7 +367,6 @@
           <p>
             <a href="#!">Contact</a>
           </p>
-          <hr class="mb-3 mt-0 d-inline-block separador-sm">
           <p>
             <a href="#!">Build My Team</a>
           </p>
@@ -503,7 +502,17 @@
       }
       false
     });
+
+    $('.nav-link').click(function() {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top
+    }, 1500);
+    });
+
+
   </script>
+  
 </body>
 
 </html>
