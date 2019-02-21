@@ -204,6 +204,7 @@ footer a:hover {
   margin-bottom: 0px;
 }
 
+
 /* carta about us - splitted */
 
 
@@ -385,8 +386,30 @@ input,
   color: #36474F;
 }
 
+@media only screen and (max-width:768px) {
+  #howitworks .join-us-form form p {
+    font-size: 35px;
+
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #howitworks .join-us-form form p {
+    font-size: 25px;
+
+  }
+}
+
 #howitworks .join-us-form #send-button {
   background: #122026;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+
+}
+
+#howitworks .join-us-form #send-button:hover {
+  background: #ea202d;
   width: 100px;
   color: white;
 
@@ -596,4 +619,108 @@ section:before {
   height: 54px;
   content: "";
   display:block;
+ }
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+#builder .create-team,
+.design-team,
+.create-2 {
+  height: 300px;
+  padding-left: 31px;
+}
+
+#builder .create-team {
+  background-color: #122026;
+}
+
+#builder .design-team {
+  background-color: #EA202D;
+}
+
+
+#builder .create-team,
+.create-2 {
+  background-color: #122026;
+}
+
+#builder .create-team span,
+.design-team span {
+  display: block;
+}
+
+#builder .create-team p,
+.design-team p {
+  color: white;
+}
+
+#builder .create-team h3,
+.design-team h3 {
+  font-weight: bold;
+  color: white;
+}
+
+#builder .create-team button {
+  margin-top: 22px;
+  width: 70px;
+  background-color: #EA202D;
+  border: 1px solid #EA202D;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#builder .create-team button:hover {
+  border: 1px solid white;
+  background-color: #122026;
+
+}
+
+
+#builder .design-team button {
+  margin-top: 22px;
+  width: 70px;
+  background-color: #122026;
+  border: 1px solid #122026;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#builder .design-team button:hover {
+  background-color: #EA202D;
+  border: 1px solid white;
+
+}
+
+.modal-content {
+  background-color: transparent;
+  border: 0;
+
+}
+
+.create-2 p {
+  color: white;
+  width: 370px;
+}
+
+.create-2 button {
+  width: 60px;
+  margin-top: 25px;
+  background-color: #ea202d;
+  border: 1px solid #ea202d;
+  cursor: pointer;
+}
+
+.create-2 button:hover {
+  border: 1px solid white;
+  background-color: #122026;
+
+}
+
+.hide {
+  display: none !important;
 }
