@@ -10,12 +10,14 @@ a {
   /* For Safari 3.1 to 6.0 */
   transition: width 2s linear 1s;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 a:hover,
 .active {
   color: #36474F;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* titulos */
@@ -109,6 +111,12 @@ p {
   background-color: #122026;
 }
 
+.separador-blanco {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
 .numbers {
   border-radius: 50%;
   width: 50px;
@@ -153,29 +161,29 @@ footer a:hover {
   background-color: #EA202D;
 }
 
+.bg-blue {
+  background-color: #36474F;
+}
+
+.bg-darkblue {
+  background-color: #122026;
+}
+
 /* cartas */
 .card {
   box-shadow: 0px 5px 20px 0px rgba(0, 10, 30, 0.1);
 }
 
-.card:hover .card-info {
+.card:hover .card-hover {
   opacity: 1;
-  top: 10%;
+  transition: top 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .card-info {
-  width: 100%;
-  position: absolute;
-  top: 20%;
-  left: 0;
-  margin: 0 auto;
-  padding: 0 10px;
   text-align: left;
   font-size: 0.8rem;
   line-height: 24px;
   z-index: 20;
-  opacity: 0;
-  transition: top 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .card .card-img-top {
@@ -196,8 +204,28 @@ footer a:hover {
   margin-bottom: 0px;
 }
 
+<<<<<<< HEAD=======
+/* carta about us - splitted */
 
-#howitworks .container-fluid {
+
+.card-hover {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 2;
+}
+
+.bigcard {
+  min-height: 600px;
+}
+
+.bigcard:hover .card-hover {
+  opacity: 1;
+  color: #ffffff;
+  transition: opacity 0.4s;
+}
+
+>>>>>>>12596f44d5eaef1db9fa31d5861ed710d538d66f #howitworks .container-fluid {
   background-image: url("../images/join-us_background.jpg");
   width: 100%;
   background-size: cover;
@@ -205,6 +233,21 @@ footer a:hover {
   background-repeat: no-repeat;
 }
 
+.bigcard .card-info {
+  background-color: #ffffff;
+  color: #36474F;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.founders-name {
+  font-weight: bold;
+}
 
 #howitworks .join-us-form {
   /*background-image: url("../images/join-us_background.jpg");*/
@@ -347,7 +390,6 @@ input,
 .contact-section {
   height: 100vh;
   background-image: url("images/join-us_background.jpg");
-  height: 100px;
 }
 
 
