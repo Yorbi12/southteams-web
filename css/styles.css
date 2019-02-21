@@ -221,7 +221,7 @@ footer a:hover {
 .bigcard:hover .card-hover {
   opacity: 1;
   color: #ffffff;
-  transition: opacity 0.4s; 
+  transition: opacity 0.4s;
 }
 
 #howitworks .container-fluid {
@@ -389,6 +389,102 @@ input,
 .contact-section {
   height: 100vh;
   background-image: url("images/join-us_background.jpg");
+}
+
+/*******  CAROOUSEL CLIENTS ******/
+.feedback {
+  width: 782px;
+}
+
+.feedback .owl-nav {
+  position: relative;
+}
+
+.feedback .owl-nav button.owl-prev,
+.feedback .owl-nav button.owl-next {
+  position: absolute;
+  top: -200px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #36474f;
+  color: #36474f;
+}
+
+
+.feedback .owl-nav [class*='owl-']:hover {
+  background: none;
+  color: inherit;
+}
+
+
+.feedback .owl-nav button:focus .feedback .owl-nav button:focus {
+  border: none;
+}
+
+.feedback .owl-nav button.owl-prev span,
+.feedback .owl-nav button.owl-next span {
+  font-size: 26px;
+  height: 0;
+  line-height: 22px;
+}
+
+
+.feedback .owl-nav button.owl-prev {
+  left: 0
+}
+
+.feedback .owl-nav button.owl-next {
+  right: 0;
+}
+
+.comment-client {
+  border: 2px solid #36474f;
+  width: 650px;
+  margin: auto;
+  padding: 29px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info-client {
+  margin-left: 33px;
+}
+
+.info-client .name-client {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.info-client .name-client::after {
+  content: "";
+  display: block;
+  width: 70px;
+  border-bottom: 6px solid #ea202d;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+.info-client .name-client h3 {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  color: #36474F;
+  margin: 0;
+}
+
+.info-client .name-client h4 {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  color: #63727B;
+  margin-bottom: 10px;
+}
+
+.info-client p {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 24px;
+  color: #36474F;
 }
 
 
