@@ -724,3 +724,8 @@ section:before {
 .hide {
   display: none !important;
 }
+
+.clients-woman {
+  max-width: 45px;
+}
+

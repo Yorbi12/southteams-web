@@ -167,70 +167,66 @@
       </div>
   </section>
 
-  <section id="ourclients" class="bg-gray  py-5">
+  <section id="ourclients" class="bg-gray py-4">
     <div class="container">
-
-      <div class="feedback owl-carousel owl-theme">
-        <div class="item">
-          <div class="comment-client">
-            <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
-            <div class="info-client">
-              <div class="name-client">
-                <h3>Fenando Gómez</h3>
-                <h4>Director at Global Xerip</h4>
-              </div>
-              <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
-                development in no time. Very professional, and it was great to be able to be on the same time zone, in
-                order to be more productive and agile. They added value to our project. Thanks! </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="comment-client">
-            <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
-            <div class="info-client">
-              <div class="name-client">
-                <h3>Fenando Gómez</h3>
-                <h4>Director at Global Xerip</h4>
-              </div>
-              <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
-                development in no time. Very professional, and it was great to be able to be on the same time zone, in
-                order to be more productive and agile. They added value to our project. Thanks! </p>
-            </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
       <div class="row">
         <div class="col-md-4 col-sm-6">
-          <img class="img-fluid float-left mr-2" style="max-width: 40px" src="images/other-clients.png" alt="">
+          <div class="feedback owl-carousel owl-theme mb-5">
+            <div class="item">
+              <div class="comment-client">
+                <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
+                <div class="info-client">
+                  <div class="name-client">
+                    <h3>Fenando Gómez</h3>
+                    <h4>Director at Global Xerip</h4>
+                  </div>
+                  <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
+                    development in no time. Very professional, and it was great to be able to be on the same time zone, in
+                    order to be more productive and agile. They added value to our project. Thanks! </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="comment-client">
+                <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
+                <div class="info-client">
+                  <div class="name-client">
+                    <h3>Fenando Gómez</h3>
+                    <h4>Director at Global Xerip</h4>
+                  </div>
+                  <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
+                    development in no time. Very professional, and it was great to be able to be on the same time zone, in
+                    order to be more productive and agile. They added value to our project. Thanks! </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-md-5">
+          <img class="img-fluid float-left mr-2 clients-woman" src="images/other-clients.png" alt="">
           <p class="small-text">Leave us your details if you would like to know more about how to build your highly
             specialized team and we will get back to you in no time.</p>
         </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x80" alt="">
-          </a>
+        <div class="col-sm-8">
+        <div class="owl-carousel"> 
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x60" alt="">
+            </a>
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x60" alt="">
+            </a>
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x60" alt="">
+            </a>
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x60" alt="">
+            </a>
         </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x80" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x80" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="http://placehold.it/160x80" alt="">
-          </a>
         </div>
       </div>
 
@@ -553,6 +549,15 @@
         nav: true,
         loop: true,
         margin: 10,
+      });
+    });
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplaySpeed: 100,
       });
     });
   </script>
