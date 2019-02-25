@@ -251,7 +251,23 @@ footer a:hover {
 .card-content {
   position: relative;
   width: 100%;
-  transition: opacity 1s;
+  transition: opacity .5s;
+}
+
+.comments-card {
+  transition: opacity .5s;
+}
+
+.comments-card:hover .card-content {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+}
+
+.comments-card:hover {
+  -webkit-box-shadow:inset 0px 0px 0px 10px #ea202d;
+  -moz-box-shadow:inset 0px 0px 0px 10px #ea202d;
+  box-shadow:inset 0px 0px 0px 10px #ea202d;
 }
 
 /******* FOUNDERS CARDS ********/
@@ -1057,4 +1073,8 @@ border-radius: 5px;
 .img-client {
   max-width: 130px;
   width: 100%;
+}
+
+.comment-red {
+  color: #EA202D;
 }
