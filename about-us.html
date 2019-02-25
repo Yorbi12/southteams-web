@@ -203,8 +203,17 @@
 
       <div class="row">
         <div class="col-md-6 mb-5">
-          <div class="card">
-            <img class="card-img" src="images/creador-1.jpg" alt="Leandro Ariel Boffi">
+          <div class="card founders-red">
+            <div class="card-hover">
+                <div class="card-info p-5 m-4 text-white">
+                    <p>Lean is a natural entrepreneur, founder of Southteams and Worket, a app that revolutionized the way in which people apply for a job. He builds great teams that build great products.</p>
+                    <p class="mt-5 text-uppercase font-weight-bold">Important Fact</p>
+                    <p>Lean has the ability to play the piano as good as his coding skills.</p>
+                </div>
+            </div>
+            <div class="card-content">
+              <img class="card-img-top" src="images/creador-1.jpg" alt="Leandro Ariel Boffi">
+            </div>
             <div class="founders-card">
               <div class="p-3">
                 <h4 class="founders-name">Leandro Ariel Boffi</h4>
@@ -231,8 +240,18 @@
           </div>
         </div>
         <div class="col-md-6 mb-5">
-          <div class="card">
-            <img class="card-img" src="images/creador-2.jpg" alt="Mariano Molina">
+          <div class="card founders-blue">
+            <div class="card-hover">
+              <div class="card-info p-5 m-4 text-white">
+                  <p>Software Developer & Team Builder.
+                      He is a proactive person with great leadership skills.  He is determined to his objectives, as a good engineer, he also has the capacity to analyse and investigate complex matters and solving problems.</p>
+                  <p class="mt-5 text-uppercase font-weight-bold">Important Fact</p>
+                  <p>Not only a technology geek but an awesome saxo player.</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <img class="card-img-top" src="images/creador-2.jpg" alt="Mariano Molina">
+            </div>
             <div class="founders-card">
               <div class="p-3">
                 <h4 class="founders-name">Mariano Molina</h4>
@@ -316,9 +335,9 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-dark text-uppercase" type="submit">Send</button>
+                <button id="sendMessageButton" class="btn btn-dark text-uppercase px-5" type="submit">Send</button>
               </div>
             </div>
           </form>
@@ -510,15 +529,6 @@
       }
       false
     });
-
-    $('.nav-link').click(function() {
-    var sectionTo = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(sectionTo).offset().top
-    }, 1500);
-    });
-
-
   </script>
   
 </body>

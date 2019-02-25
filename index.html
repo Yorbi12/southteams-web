@@ -39,19 +39,20 @@
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="index.html#howitworks">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="our-talent.html">Our Talent</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="joinus.html">Join Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
-            </li>
+            <a class="nav-link js-scrollTo" href="#howitworks">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our-talent.html">Our Talent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="joinus.html">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#contact">Contact</a>
+          </li>
           <li class="nav-item ml-2">
-            <a class="nav-link btn btn-outline" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Build my team</a>
+            <a class="nav-link btn btn-outline" href="#" data-toggle="modal" data-target=".bd-modal-lg">Build
+              my team</a>
           </li>
         </ul>
       </div>
@@ -67,7 +68,7 @@
           <hr class="mb-2 mt-0 d-inline-block separador">
           <p class="lead text-blue-50 mb-3 letter-spacing-sm">We bring your team together with the best software and
             specialists</p>
-          <a class="btn btn-brand btn-outline" href="#"><i class="fas fa-md fa-play"></i> <span>Watch Video</span></a>
+          <a class="btn btn-brand btn-outline" href="#" data-toggle="modal" data-target=".modal-video"><i class="fas fa-md fa-play"></i> <span>Watch Video</span></a>
         </div>
         <div class="col-lg-7">
           <img class="card-img-top pt-5" src="images/hero-img.png" alt="">
@@ -169,43 +170,53 @@
 
   <section id="ourclients" class="bg-gray  py-5">
     <div class="container">
-
-      <div class="feedback owl-carousel owl-theme">
-        <div class="item">
-          <div class="comment-client">
-            <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
-            <div class="info-client">
-              <div class="name-client">
-                <h3>Fenando Gómez</h3>
-                <h4>Director at Global Xerip</h4>
-              </div>
-              <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
-                development in no time. Very professional, and it was great to be able to be on the same time zone, in
-                order to be more productive and agile. They added value to our project. Thanks! </p>
-            </div>
-
-          </div>
+      <div class="row">
+        <div class="col-md-8 mb-5">
+          <h1>Happy Clients</h1>
+          <hr class="mb-2 mt-0 d-inline-block separador">
         </div>
-
-        <div class="item">
-          <div class="comment-client">
-            <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
-            <div class="info-client">
-              <div class="name-client">
-                <h3>Fenando Gómez</h3>
-                <h4>Director at Global Xerip</h4>
-              </div>
-              <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
-                development in no time. Very professional, and it was great to be able to be on the same time zone, in
-                order to be more productive and agile. They added value to our project. Thanks! </p>
-            </div>
-
-          </div>
-        </div>
-
-
-
       </div>
+      <div class="row">
+        <div class="col-8">
+          <div class="feedback owl-carousel owl-theme">
+            <div class="item">
+              <div class="comment-client">
+                <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
+                <div class="info-client">
+                  <div class="name-client">
+                    <h3>Fenando Gómez</h3>
+                    <h4>Director at Global Xerip</h4>
+                  </div>
+                  <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
+                    development in no time. Very professional, and it was great to be able to be on the same time zone, in
+                    order to be more productive and agile. They added value to our project. Thanks! </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="comment-client">
+                <img class="img-fluid" src="images/clientes-fernando.jpg" alt="">
+                <div class="info-client">
+                  <div class="name-client">
+                    <h3>Fenando Gómez</h3>
+                    <h4>Director at Global Xerip</h4>
+                  </div>
+                  <p>Working with Southteams allowed us to expand our team with the right qualified candidates and
+                    development in no time. Very professional, and it was great to be able to be on the same time zone, in
+                    order to be more productive and agile. They added value to our project. Thanks! </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- col 8 de clients-->
+
+        <div class="col-4">
+          ...
+        </div>
+    </div>
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <img class="img-fluid float-left mr-2" style="max-width: 40px" src="images/other-clients.png" alt="">
@@ -292,9 +303,9 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-dark text-uppercase" type="submit">Send</button>
+                <button id="sendMessageButton" class="btn btn-dark text-uppercase px-5" type="submit">Send</button>
               </div>
             </div>
           </form>
@@ -454,15 +465,15 @@
 
 
 
+  <!--first screen-->
 
 
-
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div id="builder" class="container">
-          <div class="row">
+          <div class="row" >
 
             <div class="col-md-6 d-flex flex-column justify-content-center create-team">
               <p>I want to</p>
@@ -477,11 +488,14 @@
                 my team</h3>
               <button type="button" class="btn btn-primary">START</button>
             </div>
-          </div>
 
-        </div>
 
-        <div class="container create-2 d-flex flex-column justify-content-center align">
+
+
+        <!--first creator screen-->
+
+
+        <div class="container create-2 d-flex flex-column justify-content-center ">
           <div class="row">
 
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
@@ -489,13 +503,185 @@
                 When you are done click “next” at the bottom right.</p>
               <button type="button" class="btn btn-primary">OK!</button>
             </div>
+          </div>
+        </div>
 
+
+
+
+
+        <div class="container create-3">
+          <div class="row">
+
+            <div class="col-md-6 mb-5 technology pt-4">
+              <h3>Technology:</h3>
+              <hr class="mb-2 mt-0 d-inline-block separador">
+              <div class="pill-area" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                <span class="badge badge-pill badge-primary" draggable="true" ondragstart="drag(event)" id="drag1">HTML</span>
+                <span class="badge badge-pill badge-primary" draggable="true" ondragstart="drag(event)" id="drag2">C++</span>
+                <span class="badge badge-pill badge-primary" draggable="true" ondragstart="drag(event)" id="drag3">PHP</span>
+                <span class="badge badge-pill badge-primary" draggable="true" ondragstart="drag(event)" id="drag4">REACT</span>
+
+              </div>
+              <p class="text-uppercase small-text text-white my-2">DRAG AS MANY PEOPLE YOU NEED ON EACH ITEM</p>
+              <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                  <span class="badge badge-pill" draggable="true" ondragstart="drag(event)" id="drag5"><img class="img-fluid float-left mr-2" style="max-width: 40px" src="images/mujer-drag.png" alt=""></span>
+                  <span class="badge badge-pill" draggable="true" ondragstart="drag(event)" id="drag6"><img class="img-fluid float-left mr-2" style="max-width: 40px" src="images/hombre-drag.png" alt=""></span>
+  
+              </div>
+            </div>
+
+            <div class="col-md-6 d-flex flex-column justify-content-center myteam pt-4">
+              <div>
+                <h3>My team:</h3>
+                <hr class="mb-2 mt-0 d-inline-block separador">
+                <div class="pill-area-add" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary ml-auto">NEXT</button>
+            </div>
 
           </div>
         </div>
+
+
+
+
+
+
+        <div class="container create-4">
+          <div class="row">
+            <div class="col-md-12 pt-4">
+              <h3>Please fill in your details:</h3>
+              <hr class="mb-2 mt-0 d-inline-block separador">
+            </div>
+          </div>
+
+          <div class="row">
+            <form action="" class="col-md-12">
+              <div class="row">
+
+                <div class="col-md-6 pl-4">
+
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <label for="phonenumber">Phone number</label>
+                  <input type="tel" class="form-control" id="phonenumber" placeholder="Phone number">
+                  <label for="email">Mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="Mail">
+                  <label for="companyname">Company name</label>
+                  <input type="text" class="form-control" id="companyname" placeholder="Company name">
+
+                </div>
+                <div class="col-md-6 pl-3 d-flex flex-column justify-content-center pr-4">
+                  <h5>Project Description... </h5>
+                  <textarea class="form-control" id="message" placeholder="(Please leave us a short description of your project, and prefered time in which we can contact you)"
+                    required="required" data-validation-required-message="Please enter a message." aria-invalid="false""></textarea>
+                  <button type="
+                    button" class="btn btn-primary ml-auto">CONTACT US</button>
+              </div>
+
+          </div>
+        </form>
+      </div>
+        </div>
+
+
+
+        <div class="container create-5 d-flex flex-column justify-content-center align-items-center p-4">
+          <div class="row">
+            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fas fa-check d-flex flex-column justify-content-center align-items-center"></i>
+                <h3 class="m-2">SENT</h3>
+                <div class="separator m-2"></div>
+                <h5 class="mt-2">Cari Wray, </h5>
+                <p class="mt-2">Thank you for contacting us.
+
+                  <span class="mt-1"> We will be in touch 
+                    in no time!</span></p>
+                    <div class="separator mt-2"></div>
+                    <button type="button" class="btn btn-primary">OK!</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container design-1">
+            <div class="row">
+              <div class="col-md-12 pt-4">
+                <h3>Please fill in your details:</h3>
+                <hr class="mb-2 mt-0 d-inline-block separador">
+              </div>
+            </div>
+      
+            <div class="row">
+              <form action="" class="col-md-12">
+                <div class="row">
+      
+                  <div class="col-md-6 pl-4">
+      
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                      <label for="phonenumber">Phone number</label>
+                      <input type="tel" class="form-control" id="phonenumber" placeholder="Phone number">
+                      <label for="email">Mail</label>
+                      <input type="email" class="form-control" id="email" placeholder="Mail">
+                      <label for="companyname">Company name</label>
+                      <input type="text" class="form-control" id="companyname" placeholder="Company name">
+      
+                  </div>
+                  <div class="col-md-6 pl-3 d-flex flex-column justify-content-center pr-4">
+                    <h5>Project Description... </h5>
+                    <textarea class="form-control" id="message" placeholder="(Please leave us a short description of your project, and prefered time in which we can contact you)"
+                      required="required" data-validation-required-message="Please enter a message." aria-invalid="false""></textarea>
+                        <button type="
+                      button" class="btn btn-primary ml-auto">CONTACT US</button>
+                      </div>
+      
+                    </div>
+              </form>
+            </div>
+        </div>
+
+
+
+
+
+
+              <div class="container design-2 d-flex flex-column justify-content-center align-items-center p-4">
+                  <div class="row">
+                    <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                        <i class="fas fa-check d-flex flex-column justify-content-center align-items-center"></i>
+                        <h3 class="m-2">SENT</h3>
+                        <div class="separator m-2"></div>
+                        <h5 class="mt-2">Cari Wray, </h5>
+                        <p class="mt-2">Thank you for contacting us.
+        
+                          <span class="mt-1"> We will be in touch 
+                            in no time!</span></p>
+                            <div class="separator mt-2"></div>
+                            <button type="button" class="btn btn-primary">OK!</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="modal fade modal-video" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-video" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -532,36 +718,36 @@
 
 
 
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/owlcarousel/owl.carousel.js"></script>
+        
 
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+        <script src="js/costume.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".feedback").owlCarousel({
+              center: true,
+              items: 1,
+              dots: false,
+              nav: true,
+              loop: true,
+              margin: 10,
+            });
+          });
+        </script>
 
-
-
-
-
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/owlcarousel/owl.carousel.js"></script>
-
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".feedback").owlCarousel({
-        center: true,
-        items: 1,
-        dots: false,
-        nav: true,
-        loop: true,
-        margin: 10,
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $('html,body').animate({
-      scrollTop: $(window.location.hash).offset().top
-    });
-</script>
+        <script type="text/javascript">
+          jQuery(document).ready(function(){
+            jQuery('body').on('click', '.js-scrollTo', function(event) {
+              event.preventDefault();
+              var id = jQuery(this).attr('href');
+              jQuery('html, body').animate( { scrollTop: jQuery(id).offset().top }, 850 );
+            });
+          })
+        </script>
 
 </body>
 

@@ -63,7 +63,7 @@ p {
 .nav-item .btn-outline:hover {
   background: #EA202D;
   border: 2px solid #EA202D;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .btn-dark {
@@ -169,14 +169,19 @@ footer a:hover {
   background-color: #122026;
 }
 
+.bg-dark {
+  background-color: #122026;
+}
+
 /* cartas */
 .card {
   box-shadow: 0px 5px 20px 0px rgba(0, 10, 30, 0.1);
+  transition: opacity 0.3s;
 }
 
 .card:hover .card-hover {
   opacity: 1;
-  transition: top 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+
 }
 
 .card-info {
@@ -184,15 +189,15 @@ footer a:hover {
   font-size: 0.8rem;
   line-height: 24px;
   z-index: 20;
+  transition: opacity 0.1s;
 }
 
 .card .card-img-top {
-  transition: opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: opacity 0.3s;
 }
 
 .card:hover .card-img-top {
   opacity: 0.05;
-  transition: opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .card .card-title {
@@ -211,7 +216,7 @@ footer a:hover {
 .card-hover {
   position: absolute;
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.2s;
   z-index: 2;
 }
 
@@ -228,7 +233,6 @@ footer a:hover {
 .bigcard:hover .card-hover {
   opacity: 1;
   color: #ffffff;
-  transition: opacity 0.4s;
 }
 
 #howitworks .container-fluid {
@@ -247,9 +251,18 @@ footer a:hover {
 .card-content {
   position: relative;
   width: 100%;
+  transition: opacity 1s;
 }
 
+/******* FOUNDERS CARDS ********/
 
+.founders-red:hover .card-content {
+  background: #ea202d;
+}
+
+.founders-blue:hover .card-content {
+  background: #122026;
+}
 
 .founders-name {
   font-weight: bold;
@@ -491,7 +504,6 @@ input,
   display: block;
   width: 70px;
   border-bottom: 6px solid #ea202d;
-  /* This creates the border. Replace black with whatever color you want. */
 }
 
 .info-client .name-client h3 {
@@ -515,6 +527,8 @@ input,
   line-height: 24px;
   color: #36474F;
 }
+
+
 
 
 /*******  OUR TEAMS CARDS ******/
@@ -608,11 +622,11 @@ input,
 }
 
 .img-ourtalent {
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .img-tech {
-  max-width: 800px;
+  max-width: 850px;
 }
 
 section:before {
@@ -630,8 +644,8 @@ section:before {
 
 #builder .create-team,
 .design-team,
-.create-2 {
-  height: 300px;
+.create-2, .create-3 .technology, .create-3 .myteam, .create-4, .create-5, .design-1, .design-2{
+  height: 380px;
   padding-left: 31px;
 }
 
@@ -645,7 +659,7 @@ section:before {
 
 
 #builder .create-team,
-.create-2 {
+.create-2, .create-3, .create-4, .create-5 {
   background-color: #122026;
 }
 
@@ -696,6 +710,7 @@ section:before {
 
 }
 
+
 .modal-content {
   background-color: transparent;
   border: 0;
@@ -707,7 +722,7 @@ section:before {
   width: 370px;
 }
 
-.create-2 button {
+.create-2 button, .create-3 button, .create-4 button, .create-5 button{
   width: 60px;
   margin-top: 25px;
   background-color: #ea202d;
@@ -715,7 +730,7 @@ section:before {
   cursor: pointer;
 }
 
-.create-2 button:hover {
+.create-2 button:hover, .create-3 button:hover, .create-4 button:hover, .create-5 button:hover{
   border: 1px solid white;
   background-color: #122026;
 
@@ -723,4 +738,323 @@ section:before {
 
 .hide {
   display: none !important;
+}
+
+.create-3 h3, .create-4 h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.create-3 .pill-area {
+  height: 68%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.create-3 .pill-area .badge, .pill-area-add .badge{
+padding: 22px 13px;
+height: 45px;
+width: 45px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-right: 12px;
+margin-bottom: 12px;
+background-color: #FC523A;
+cursor: pointer;
+}
+
+.create-3 .pill-area .badge:hover, .pill-area-add .badge:hover {
+background-color: #EA202D;
+}
+
+.create-3 .pill-area-add {
+  height: 223px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+
+.create-4 form {
+  width: 90%;
+}
+
+
+.create-4 form label {
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.create-4 form .form-control {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: white;
+  background-color: #122026;
+  border-radius: 0;
+  height: calc(1.25rem + 2px);
+  margin-bottom: 15px;
+  padding: 5px;
+  color: white;
+}
+
+
+.create-4 .form-control:focus {
+  border-width: 0 0 2px;
+  border-color: white;
+  background-color: #122026;
+  border-radius: 0;
+  border-color: #122026;
+  box-shadow: 0 1px 1px #122026 inset, 0 0 8px #122026;
+  outline: 0 none;
+}
+
+
+.create-4 h5{
+font-weight: bold;
+font-size: 13px;
+color: white;
+}
+
+.create-4 form textarea.form-control {
+height: 60%;
+background-color: #546267;
+border: 1px solid white;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+resize: none;
+}
+
+.create-4 form textarea.form-control::placeholder {
+  font-size: 12px;
+  color: rgb(192, 192, 192);
+  }
+  
+.create-4 form textarea.form-control:focus {
+  background-color: #546267;
+border: 1px solid white;
+border-radius: 5px;
+}
+
+.create-4 button {
+  width: 108px;
+}
+.create-5 .row{
+width: 100%;
+  }
+  
+
+.create-5 i{
+height: 60px;
+width: 60px;
+background-color: #546267;
+border-radius: 50px;
+border: 3px solid white;
+color: white;
+font-size: 20px;
+}
+
+.create-5 h3 {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+
+.create-5 h5 {
+  color: white;
+  font-size: 20px;
+}
+
+.create-5 p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.create-5 span {
+display: block;
+  color: white;
+  font-size: 13px;
+}
+
+.create-5 .separator {
+background-color: white;
+height: 1px;
+width: 40%;;
+  }
+
+
+
+
+
+
+
+  #builder .design-1, .design-2 {
+  background-color: #EA202D;
+}
+
+.design-1 h3{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+
+}
+
+.design-1 .separador{
+background-color: #122026;
+
+}
+
+
+.design-1 button, .design-2 button{
+  width: 60px;
+  margin-top: 25px;
+  background-color: #122026;
+  border: 1px solid #122026;
+  cursor: pointer;
+}
+
+.design-1 button:hover, .design-2 button:hover{
+  border: 1px solid white;
+  background-color: #EA202D;
+
+}
+
+
+
+.design-1 form{
+  width: 90%;
+}
+
+
+.design-1 form label {
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.design-1 form .form-control {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: white;
+  background-color: #EA202D;
+  border-radius: 0;
+  height: calc(1.25rem + 2px);
+  margin-bottom: 15px;
+  padding: 5px;
+  color: white;
+}
+
+.design-1 form .form-control::placeholder {
+
+  color: white;
+}
+
+
+.design-1 .form-control:focus {
+  border-width: 0 0 2px;
+  border-color: white;
+  background-color: #EA202D;
+  border-radius: 0;
+  border-color: #EA202D;
+  box-shadow: 0 1px 1px #EA202D inset, 0 0 8px #EA202D;
+  outline: 0 none;
+}
+
+
+.design-1 h5{
+font-weight: bold;
+font-size: 13px;
+color: white;
+}
+
+.design-1 form textarea.form-control {
+height: 60%;
+background-color: white;
+border: 1px solid white;
+border-radius: 5px;
+color: #122026;
+font-size: 13px;
+resize: none;
+}
+
+.design-1 form textarea.form-control::placeholder {
+  font-size: 12px;
+  color: #122026;
+  }
+  
+.design-1 form textarea.form-control:focus {
+  background-color: white;
+border: 1px solid white;
+border-radius: 5px;
+}
+
+.design-1 button {
+  width: 108px;
+}
+
+
+
+
+.design-2 .row{
+  width: 100%;
+    }
+    
+  
+  .design-2 i{
+  height: 60px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 50px;
+  border: 3px solid white;
+  color: white;
+  font-size: 20px;
+  }
+  
+  .design-2 h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+  }
+  
+  
+  .design-2 h5 {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .design-2 p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .design-2 span {
+  display: block;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .design-2 .separator {
+  background-color: white;
+  height: 1px;
+  width: 40%;;
+    }
+  
+
+.img-client {
+  max-width: 130px;
+  width: 100%;
 }
