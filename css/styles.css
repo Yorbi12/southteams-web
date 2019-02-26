@@ -170,7 +170,7 @@ footer a:hover {
 }
 
 .bg-dark {
-  background-color: #122026;
+  background-color: #122026 !important;
 }
 
 /* cartas */
@@ -252,14 +252,11 @@ footer a:hover {
 .card-content {
   position: relative;
   width: 100%;
-  transition: opacity .5s;
-  display: flex;
-  flex-direction: column;
+  transition: opacity .5s;    
+  flex-direction: column; 
   justify-content: center;
   align-content: center;
-  align-items: center;
   height: 100%;
-  padding: 0 10%;
 }
 
 .comments-card {
@@ -679,11 +676,11 @@ input,
 }
 
 .img-ourtalent {
-  max-width: 450px;
+  max-width: 490px;
 }
 
 .img-tech {
-  max-width: 850px;
+  max-width: 900px;
 }
 
 section:before {
@@ -702,7 +699,7 @@ section:before {
 #builder .create-team,
 .design-team,
 .create-2, .create-3 .technology, .create-3 .myteam, .create-4, .create-5, .design-1, .design-2{
-  height: 380px;
+  height: 450px;
   padding-left: 31px;
 }
 
