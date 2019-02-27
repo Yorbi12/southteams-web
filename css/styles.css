@@ -179,7 +179,7 @@ footer a:hover {
   transition: opacity 0.3s;
 }
 
-.card:hover .card-hover {
+.card:hover .card-hover, .card:active .card-hover  {
   opacity: 1;
 
 }
@@ -196,7 +196,7 @@ footer a:hover {
   transition: opacity 0.3s;
 }
 
-.card:hover .card-img-top {
+.card:hover .card-img-top, .card:active .card-img-top {
   opacity: 0.05;
 }
 
@@ -228,10 +228,13 @@ footer a:hover {
   .bigcard {
     min-height: 600px;
   }
+  .navbar-brand img {
+    max-width: 180px;
+  }
 }
 
 
-.bigcard:hover .card-hover {
+.bigcard:hover .card-hover, .bigcard:active .card-hover {
   opacity: 1;
   color: #ffffff;
 }
@@ -267,13 +270,13 @@ footer a:hover {
   height: 97%;
 }
 
-.comments-card:hover .card-content {
+.comments-card:hover .card-content, .comments-card:active .card-content {
   position: relative;
   width: 100%;
   opacity: 0;
 }
 
-.comments-card:hover {
+.comments-card:hover, .comments-card:active {
   -webkit-box-shadow:inset 0px 0px 0px 10px #ea202d;
   -moz-box-shadow:inset 0px 0px 0px 10px #ea202d;
   box-shadow:inset 0px 0px 0px 10px #ea202d;
@@ -281,11 +284,11 @@ footer a:hover {
 
 /******* FOUNDERS CARDS ********/
 
-.founders-red:hover .card-content {
+.founders-red:hover .card-content, .founders-red:active .card-content {
   background: #ea202d;
 }
 
-.founders-blue:hover .card-content {
+.founders-blue:hover .card-content, .founders-blue:active .card-content {
   background: #122026;
 }
 
@@ -1115,4 +1118,13 @@ border-radius: 5px;
 
 .comment-red {
   color: #EA202D;
+}
+
+textarea:focus, input:focus, a:focus, button:focus, .btn.focus, .btn:focus{
+  outline: none;
+  box-shadow: 0 0 0 0rem rgba(0,123,255,0);
+}
+
+.clients-woman {
+  max-width: 50px;
 }
